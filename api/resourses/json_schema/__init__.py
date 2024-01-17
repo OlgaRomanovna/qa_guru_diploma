@@ -1,0 +1,1 @@
+from .path_for_json_schema import contact_json_path, data_user_json_path, register_json_path
