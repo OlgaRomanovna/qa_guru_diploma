@@ -12,7 +12,7 @@ from api.resourses.user import UserModel, auth
 from config import browser
 from utils import BASE_URL, StatusCode, add_html, add_logs, add_screenshot, add_video, generate_random_string
 
-DEFAULT_BROWSER_VERSION = '100'
+DEFAULT_BROWSER_VERSION = '120'
 
 
 @pytest.fixture
