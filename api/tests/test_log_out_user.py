@@ -5,6 +5,7 @@ from api.resourses.user import get_profile, log_out
 from utils import Severity, StatusCode
 
 
+@allure.id("29420")
 @allure.severity(Severity.CRITICAL)
 @allure.title('Проверка код ответа сервера после деавторизации')
 @pytest.mark.api
@@ -16,6 +17,7 @@ def test_log_out(get_user_data_from_env):
         assert resp.status_code == StatusCode.OK, f'{resp.status_code} is not {StatusCode.OK}'
 
 
+@allure.id("29424")
 @allure.severity(Severity.CRITICAL)
 @allure.title('Проверка получения данных пользователя, для которого выполнена деавторизация')
 @pytest.mark.api

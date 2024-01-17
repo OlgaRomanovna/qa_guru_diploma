@@ -5,6 +5,7 @@ from api.resourses.contact import delete_contact, get_contact
 from utils.handbook import Severity, StatusCode
 
 
+@allure.id("29414")
 @allure.severity(Severity.BLOCKER)
 @allure.title('Удаление контакта пользователя')
 @pytest.mark.api
@@ -16,6 +17,7 @@ def test_delete_contact(get_user_data_from_env, add_contact_fixture):
         assert resp.status_code == StatusCode.OK
 
 
+@allure.id("29415")
 @allure.severity(Severity.BLOCKER)
 @allure.title('Удаление контакта пользователя')
 @pytest.mark.api

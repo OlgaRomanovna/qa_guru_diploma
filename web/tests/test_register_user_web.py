@@ -8,6 +8,7 @@ from utils import Severity
 from web.resourses import Login, Logout, WebRegisterUser
 
 
+@allure.id("29434")
 @allure.severity(Severity.BLOCKER)
 @allure.title('Успешная регистрация пользователя')
 @pytest.mark.web
@@ -27,6 +28,7 @@ def test_positive_register(open_browser):
     register_page.check_after_positive_register('Contact List')
 
 
+@allure.id("29435")
 @allure.severity(Severity.BLOCKER)
 @allure.title('Безуспешная регистрация пользователя')
 @pytest.mark.web
@@ -47,6 +49,7 @@ def test_negative_register(open_browser):
                                                 'password: Path `password` is required.')
 
 
+@allure.id("29436")
 @allure.severity(Severity.MINOR)
 @allure.title('Отмена регистрации пользователя')
 @pytest.mark.web

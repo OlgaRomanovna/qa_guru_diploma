@@ -5,6 +5,7 @@ from api.resourses.user import delete, register
 from utils import Severity, StatusCode
 
 
+@allure.id("29417")
 @allure.severity(Severity.CRITICAL)
 @allure.title('Проверка кода ответа от сервера после удаления пользователя')
 @pytest.mark.api

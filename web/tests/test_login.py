@@ -6,6 +6,7 @@ from utils import Severity
 from web.resourses import Login, Logout
 
 
+@allure.id("29430")
 @allure.severity(Severity.BLOCKER)
 @allure.title('Авторизация пользователя')
 @pytest.mark.web
@@ -18,6 +19,7 @@ def test_login(open_browser, web_user_for_auth):
     page.check_result_after_login(header='Contact List', sub_header='Click on any contact to view the Contact Details')
 
 
+@allure.id("29431")
 @allure.severity(Severity.BLOCKER)
 @allure.title('Деавторизация пользователя')
 @pytest.mark.web
@@ -37,6 +39,7 @@ def test_logout(open_browser, web_user_for_auth):
     )
 
 
+@allure.id("29432")
 @allure.severity(Severity.BLOCKER)
 @allure.title('Авторизация пользователя с некорректными данными')
 @pytest.mark.web
@@ -51,6 +54,7 @@ def test_incorrect_login(open_browser):
     login_page.check_result_after_incorrect_login_data('Incorrect username or password')
 
 
+@allure.id("29433")
 @allure.severity(Severity.MINOR)
 @allure.title('Проверка ссылки на главной странице')
 @pytest.mark.web

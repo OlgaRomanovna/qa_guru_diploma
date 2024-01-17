@@ -9,6 +9,7 @@ from api.resourses.json_schema import contact_json_path
 from utils import Severity, StatusCode
 
 
+@allure.id("29419")
 @allure.severity(Severity.BLOCKER)
 @allure.title('Валидация кода и ответа сервера после получения контакта')
 @pytest.mark.api
@@ -20,6 +21,7 @@ def test_get_contact(get_user_data_from_env, add_contact_fixture):
         assert resp.status_code == StatusCode.OK
 
 
+@allure.id("29418")
 @allure.severity(Severity.CRITICAL)
 @allure.title('Валидация JSON_SCHEMA данных контакта после получения контакта')
 @pytest.mark.api
@@ -36,6 +38,7 @@ def test_validate_contact(get_user_data_from_env, add_contact_fixture):
         validate(resp.json(), schema)
 
 
+@allure.id("29421")
 @allure.severity(Severity.CRITICAL)
 @allure.title('Валидация кода и ответа сервера после получения списка контактов')
 @pytest.mark.api

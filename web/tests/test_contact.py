@@ -5,6 +5,7 @@ from utils import Severity
 from web.resourses import AddContact, auth_web
 
 
+@allure.id("29429")
 @allure.severity(Severity.BLOCKER)
 @allure.title('Добавление контакта')
 @pytest.mark.web

@@ -10,6 +10,7 @@ from api.resourses.user import get_profile
 from utils import Severity, StatusCode
 
 
+@allure.id("29423")
 @allure.severity(Severity.BLOCKER)
 @allure.title('Валидация данных пользователя после авторизации')
 @pytest.mark.api
@@ -25,6 +26,7 @@ def test_get_user_profile(get_user_data_from_env):
         assert response.json()['email'] == os.getenv('EMAIL')
 
 
+@allure.id("29422")
 @allure.severity(Severity.CRITICAL)
 @allure.title('Валидация JSON_SCHEMA данных пользователя')
 @pytest.mark.user

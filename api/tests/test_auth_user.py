@@ -7,6 +7,7 @@ from api.resourses.user import auth
 from utils import Severity, StatusCode
 
 
+@allure.id("29411")
 @allure.severity(Severity.BLOCKER)
 @allure.title('Валидация данных пользователя после авторизации')
 @pytest.mark.api

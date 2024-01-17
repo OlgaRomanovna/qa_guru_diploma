@@ -7,6 +7,7 @@ from api.resourses.contact.contact_model import ContactModel
 from utils.handbook import Severity, StatusCode
 
 
+@allure.id("29425")
 @allure.severity(Severity.BLOCKER)
 @allure.title('Валидация кода и ответа сервера после частичной замены данных контакта')
 @pytest.mark.api

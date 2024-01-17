@@ -9,6 +9,7 @@ from api.resourses.user import register
 from utils.handbook import Severity, StatusCode
 
 
+@allure.id("29427")
 @allure.severity(Severity.BLOCKER)
 @allure.title('Валидация кода и ответа сервера после регистрации пользователя')
 @pytest.mark.api
@@ -28,6 +29,7 @@ def test_register(user_data_for_register):
         assert resp_json['email'] == user_data_for_register.email
 
 
+@allure.id("29428")
 @allure.severity(Severity.CRITICAL)
 @allure.title('Валидация JSON_SCHEMA после регистрации пользователя')
 @pytest.mark.api
