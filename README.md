@@ -51,25 +51,25 @@ pytest .
 
 ## Интеграция с Jenkins
 - для запуска тестов на сервере настроена job'a в Jenkins.
-<img src="picture/jenkins.png" alt="jenkins_job"/>
+<img src="resources/picture/jenkins.png" alt="jenkins_job"/>
 
 ## Интеграция с Allure
 - после прохождения тестов будет собран отчёт на основе генератора Allure;
-<img src="picture/dash_local_allure.png" alt="dash_local_allure"/>
+<img src="resources/picture/dash_local_allure.png" alt="dash_local_allure"/>
 - к api тестам приложены logs, cUrl;
-<img src="picture/logs_curl.png" alt="logs_curl"/>
+<img src="resources/picture/logs_curl.png" alt="logs_curl"/>
 - к UI тестам приложены video, html, logs, screenshot;
-<img src="picture/logs_ui.png" alt="logs_ui"/>
+<img src="resources/picture/logs_ui.png" alt="logs_ui"/>
 
 ## Интеграция с Allure TestOps
 - результаты прохождения тестов, а также сами тест-кейсы будут отправлены в TestOps Allure;
 <img src="resources/picture/test_ops_test_cases.png" alt="test_ops_test_cases"/>
 - на основе результатов будет сгенерирован дашборд
-<img src="picture/test_ops_dash.png" alt="test_ops_dash"/>
+<img src="resources/picture/test_ops_dash.png" alt="test_ops_dash"/>
 
 ## Нотификация в Telegram
 - после прохождения тестов результаты будут отправлены в Telegram;  
-<img src="picture/telegram_not.png" width="500">
+<img src="resources/picture/telegram_not.png" width="500">
 
 ## Пример прохождения UI-теста
-<img src="picture/1e66982f003b2056cd1399b13bfd11c9.gif">
+<img src="resources/picture/1e66982f003b2056cd1399b13bfd11c9.gif">
