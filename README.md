@@ -69,7 +69,7 @@ pytest .
 
 ## Нотификация в Telegram
 - после прохождения тестов результаты будут отправлены в Telegram;  
-<img src="picture/telegram_not.png" alt="telegram_not"/>
+<img src="picture/telegram_not.png" width="500">
 
 ## Пример прохождения UI-теста
 <img src="picture/1e66982f003b2056cd1399b13bfd11c9.gif">
