@@ -63,7 +63,7 @@ pytest .
 
 ## Интеграция с Allure TestOps
 - результаты прохождения тестов, а также сами тест-кейсы будут отправлены в TestOps Allure;
-<img src="picture/test_ops_test_cases.png" alt="test_ops_test_cases"/>
+<img src="resources/picture/test_ops_test_cases.png" alt="test_ops_test_cases"/>
 - на основе результатов будет сгенерирован дашборд
 <img src="picture/test_ops_dash.png" alt="test_ops_dash"/>
 
