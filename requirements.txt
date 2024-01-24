@@ -6,3 +6,4 @@ jsonschema==4.19.1
 python-dotenv~=1.0.0
 selene==2.0.0rc4
 pydantic==1.*
+faker==22.5.1

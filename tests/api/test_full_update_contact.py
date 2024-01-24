@@ -2,12 +2,11 @@ import allure
 import pytest
 from data import data
 from tests.api.conftest import put_request
-from utils.const import OK
-from utils.handbook import Severity
+from utils.const import OK, BLOCKER
 
 
 @allure.id("29425")
-@allure.severity(Severity.BLOCKER)
+@allure.severity(BLOCKER)
 @allure.title('Валидация кода и ответа сервера после частичной замены данных контакта')
 @pytest.mark.test_api
 @pytest.mark.contact
